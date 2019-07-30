@@ -13,7 +13,7 @@
 _Complex int f_complex(_Complex int c, int x, int *py)
 {
   __real__ c = -2 * __real__ c;
-  __imag__ c = __imag__ c + 1;
+  __imag__ c = 1 + __imag__ c;
   *py += x;
   return c;
 }

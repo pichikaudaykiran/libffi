@@ -110,5 +110,12 @@ int main(void)
 	printf ("The result is %d\n", (int)result);
 
 	}
+	free(point_type.elements);
+	point_type.elements = NULL;
+	free(size_type.elements);
+	size_type.elements = NULL;
+	free(rect_type.elements);
+	rect_type.elements = NULL;
+
 	exit(0);
 }
